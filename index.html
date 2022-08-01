@@ -410,9 +410,9 @@
         </ul>
       </div>
       <div class="footer-form">
-        <span class="footer-form-text">Подпишитесь на рассылку</span>
+        <p class="footer-form-text">Подпишитесь на рассылку</p>
         <form class="footer-form-group">
-          <input class="footer-form-input" type="email" name="email" placeholder="E-mail">
+          <input class="footer-form-input" type="email" name="email" required placeholder="E-mail">
           <button class="footer-form-button">Подписаться
             <svg class="footer-form-button-icon" width="20" height="20">
               <use href="./images/icons.svg#icon-plane"></use>
@@ -428,7 +428,7 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal-btn" data-modal-close>
-        <svg class="btn-icon" width="20" height="20">
+        <svg class="modal-btn-icon" width="20" height="20">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
@@ -437,29 +437,28 @@
         <div class="register-form-group" role="group">
           <label class="register-form-wrap">
             <span class="register-form-label">Имя</span>
-            <input class="register-form-input" type="account" name="user-account">
+            <input class="register-form-input" type="text" required name="user-account">
             <svg class="register-form-icon" width="12" height="12">
               <use class="register-form-account" href="./images/icons.svg#account"></use>
             </svg>
           </label>
           <label class="register-form-wrap">
             <span class="register-form-label">Телефон</span>
-            <input class="register-form-input" type="tel" name="user-phone">
+            <input class="register-form-input" type="tel" required name="user-phone">
             <svg class="register-form-icon" width="13" height="13">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </label>
           <label class="register-form-wrap">
             <span class="register-form-label">Почта</span>
-            <input class="register-form-input" type="email" name="user-email">
+            <input class="register-form-input" type="email" required name="user-email">
             <svg class="register-form-icon" width="15" height="12">
               <use href="./images/icons.svg#e-mail"></use>
             </svg>
           </label>
           <label class="register-form-wrap">
             <span class="register-form-label">Комментарий</span>
-            <textarea class="register-form-message" type="textarea" rows="5" name="agreement"
-              placeholder="Введите текст"></textarea>
+            <textarea class="register-form-message" rows="5" name="agreement" placeholder="Введите текст"></textarea>
           </label>
         </div>
         <label class="register-form-agreement">

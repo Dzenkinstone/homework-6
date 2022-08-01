@@ -539,7 +539,7 @@ address {
 }
 
 .footer-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-form-group {
@@ -617,6 +617,18 @@ address {
   visibility: hidden;
   pointer-events: none;
 }
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  z-index: 1000;
+  background-color: var(--white-bg-cl);
+  border-radius: 4px;
+  transition: fill var(--anim-fast) var(--transition-timing-function);
+}
+
 .modal-btn {
   position: absolute;
   top: 8px;
@@ -634,14 +646,8 @@ address {
   background-color: transparent;
 }
 
-.modal {
-  position: relative;
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
-  z-index: 1000;
-  background-color: var(--white-bg-cl);
-  border-radius: 4px;
+.modal-btn:hover .modal-btn-icon {
+  fill: var(--accent-txt-cl);
 }
 
 .register-form {
@@ -673,7 +679,7 @@ address {
 .register-form-label {
   display: block;
   text-align: left;
-  margin-bottom: 7px;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   color: var(--grey-txt-cl);
@@ -683,7 +689,7 @@ address {
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: outline var(--anim-fast) var(--transition-timing-function);
+  transition: outline var(--anim-fast) var(--transition-timing-function);
   padding: 10px;
   padding-left: 40px;
   outline: transparent;
@@ -770,10 +776,11 @@ address {
   padding: 10px 55px;
   color: var(--white-bg-cl);
   background-color: var(--modal-btn-txt-cl);
-  transform: box-shadow var(--anim-fast) var(--transition-timing-function);
+  transition: box-shadow var(--anim-fast) var(--transition-timing-function);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
+  letter-spacing: 6%;
   align-items: center;
 }
 
@@ -884,7 +891,7 @@ address {
   transform: translateY(101%);
 }
 
-.portfolio-link:focus,
+.portfolio-link:focus .overlay,
 .portfolio-link:hover .overlay {
   transform: translateY(0);
 }
