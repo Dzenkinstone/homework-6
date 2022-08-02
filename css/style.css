@@ -554,10 +554,10 @@ address {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 20px;
 }
 
 .footer-form-input {
+  color: var(--white-bg-cl);
   display: flex;
   align-items: center;
   height: 50px;
@@ -637,6 +637,7 @@ address {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: fill var(--accent-txt-cl) var(--transition-timing-function);
 
   width: 30px;
   height: 30px;
@@ -689,15 +690,16 @@ address {
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  transition: outline var(--anim-fast) var(--transition-timing-function);
+  transition: outline var(--anim-fast) var(--transition-timing-function),
+    fill var(--anim-fast) var(--transition-timing-function);
   padding: 10px;
   padding-left: 40px;
-  outline: transparent;
+  outline: none;
   border-radius: 4px;
 }
 
-.register-form-message:focus,
-.register-form-input:focus {
+.register-form-input:focus,
+.register-form-message:focus {
   border: none;
   outline: 1px solid var(--accent-txt-cl);
 }
@@ -707,6 +709,7 @@ address {
 }
 
 .register-form-message {
+  transition: outline var(--anim-fast) var(--transition-timing-function);
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 10px;
@@ -718,7 +721,6 @@ address {
 }
 
 .register-form-icon {
-  transition: fill var(--anim-fast) var(--transition-timing-function);
   position: absolute;
   bottom: 15px;
   left: 14px;
@@ -780,7 +782,7 @@ address {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   align-items: center;
 }
 
